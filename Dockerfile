@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:20.10.17-dind-alpine3.16
 
 RUN apk add -U make python2 python2-dev docker-compose libffi-dev openssl-dev gcc libc-dev make git curl gettext libintl git bash
 RUN python2 -m ensurepip --default-pip
